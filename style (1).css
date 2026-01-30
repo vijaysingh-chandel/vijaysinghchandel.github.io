@@ -1,0 +1,102 @@
+/* ====== Global Styles ====== */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+a { color: #0b3c5d; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ====== Header ====== */
+.header {
+    background: #0b3c5d;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header h1 { margin:0; font-size:42px; }
+.header .tagline { font-size:20px; margin-top:10px; opacity:0.9; }
+.header .contact { font-size:14px; margin-top:15px; opacity:0.85; }
+.header .contact a { color: #fff; }
+
+/* ====== Container ====== */
+.container {
+    max-width: 950px;
+    margin: -50px auto 50px;
+    padding: 50px 30px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* ====== Photo Section ====== */
+.photo-section {
+    text-align: center;
+    margin-top: -90px;
+}
+.photo-section img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+/* ====== Sections ====== */
+h2 {
+    color: #0b3c5d;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+ul { padding-left: 20px; }
+
+/* ====== Buttons ====== */
+.btn-resume, .btn-linkedin {
+    display: inline-block;
+    margin: 10px 5px;
+    background: #0b3c5d;
+    color: #fff;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition:0.3s;
+}
+.btn-resume:hover, .btn-linkedin:hover { background: #08304a; }
+
+/* ====== WhatsApp Floating Button ====== */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    font-size: 16px;
+    transition: 0.3s;
+}
+.whatsapp-btn:hover { background: #1ebe57; }
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 50px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width:768px){
+    .container { padding: 30px 20px; }
+    .header h1 { font-size:32px; }
+    .photo-section img { width: 140px; height: 140px; }
+}
